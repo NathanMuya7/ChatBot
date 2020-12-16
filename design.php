@@ -13,28 +13,28 @@
 		.me {border:1px solid blue;padding: 8px;}
 		.frnd{border:1px solid red;padding: 8px;}
 
-	</style>  
+	</style>
 </head>
 <body>
-<div class="container">
-	<?php
-	session_start();
-	$name = $_SESSION['name'];
-	include 'db.php';
+ <div class="container">
+ 	<?php
+	 session_start();
+  	$name = $_SESSION['name'];
+	 include 'db.php';
 $query = "SELECT * FROM chat ORDER BY id ASC";
 
 	$run = $db->query($query);
 
 	while ($row = $run->fetch_array()) :
 
-		if ($name == $row['name']) 
+		if ($name == $row['name'])
 		{
 			?>
 				<div class="col-md-12 float text-left me">
 					<p><?= $row['msg']?></p>
 				</div>
 				<div class="col-md-12" style="height:10px;"></div>
-			<?php	
+			<?php
 		}
 		elseif ($name !== $row['name']) {
 		?>
@@ -43,16 +43,16 @@ $query = "SELECT * FROM chat ORDER BY id ASC";
 				</div>
 				<div class="col-md-12" style="height:10px;"></div>
 				<?php
-			}	
-	endwhile;	
-	/*if ($name) 
+			}
+	endwhile;
+	/*if ($name)
 	{
 		?>
 			<div class="col-md-12 float text-right me">
 				<p><?= $name?></p>
 			</div>
 			<div class="col-md-12" style="height:10px;"></div>
-		<?php	
+		<?php
 	}
 	else
 	{
@@ -63,9 +63,9 @@ $query = "SELECT * FROM chat ORDER BY id ASC";
 			<div class="col-md-12" style="height:10px;"></div>
 		<?php
 	}
-	*/	
+	*/
 	?>
-	
+
 </div>
 </body>
 </html>
