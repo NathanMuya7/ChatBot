@@ -14,22 +14,22 @@
 <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
-      <div class="modal-header">
+    <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h1 style="margin-left:20px;"><span class="glyphicon glyphicon-user"></span>&nbsp;Register</h1>
       </div>
-      <div class="modal-body">
+    <div class="modal-body">
           <form class="form col-md-12 col-sm-6 center-block" action="" method="POST">
             <div class="form-group">
               <input class="form-control input-lg" placeholder="name" type="text" name="name">
             </div>
-            <div class="form-group">
+    <div class="form-group">
               <input class="form-control input-lg" placeholder="Email" type="email" name="email">
             </div>
             <div class="form-group">
               <input class="form-control input-lg" placeholder="Password" type="password" name="pass">
             </div>
-            <div class="form-group">
+    <div class="form-group">
               <button class="btn btn-primary btn-lg btn-block" name="submit"><span class="glyphicon glyphicon-user"></span>&nbsp;Register</button>
               <!--<span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span>-->
             </div>
@@ -38,7 +38,7 @@
             </div>
 			<?php
 include_once('db.php');
-if (isset($_POST['submit'])) 
+if (isset($_POST['submit']))
 {
 	# code...
 
@@ -57,7 +57,7 @@ if ($db->query($sql) === TRUE) {
 }
 }
 ?>
-            
+
           </form>
       </div>
       <div class="modal-footer">

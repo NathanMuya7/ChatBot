@@ -4,17 +4,17 @@ include 'db.php';
 echo $name =$_GET['name'];
 echo $msg =$_GET['msg'];
 
-if (isset($name)) 
+if (isset($name))
 {
 	$insert = "INSERT INTO chat (name,msg) VALUES ('$name','$msg')";
 
 	$run = $db->query($insert);
 
-	if ($run) 
+	if ($run)
 	{
 		echo "";
 	}
-	else
+  else
 	{
 		echo "error";
 	}
