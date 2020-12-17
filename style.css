@@ -2,10 +2,12 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 html, body {
+	
     background: #e5e5e5;
     font-family: 'Lato', sans-serif;
     margin: 0px auto;
 }
+
 ::selection{
   background: rgba(82,179,217,0.3);
   color: inherit;
@@ -17,6 +19,7 @@ a{
 /* M E N U */
 
 .menu {
+	
     position: fixed;
     top: 0px;
     left: 0px;
@@ -32,6 +35,7 @@ a{
 }
 
 .back {
+	
     position: absolute;
     width: 90px;
     height: 50px;
@@ -42,6 +46,7 @@ a{
     font-size: 30px;
     padding-left: 10px;
     cursor: pointer;
+	
 }
 .back img {
     position: absolute;
@@ -56,6 +61,7 @@ a{
     -ms-border-radius: 100%;
     margin-left: 15px;
     }
+	
 .back:active {
     background: rgba(255,255,255,0.2);
 }
@@ -80,15 +86,17 @@ a{
     cursor: default;
 }
 
-/* M E S S A G E S */
+/* THE M E S S A G E S */
 
 .chat {
+	
     list-style: none;
     background: none;
     margin: 0;
     padding: 0 0 50px 0;
     margin-top: 60px;
     margin-bottom: 10px;
+	
 }
 .chat li {
     padding: 0.5rem;
@@ -107,6 +115,7 @@ a{
     -ms-border-radius: 100%;
     background-color: rgba(255,255,255,0.9);
 }
+
 .chat .avatar img {
     width: 40px;
     height: 40px;
@@ -121,6 +130,7 @@ a{
     -ms-user-select: none;
 }
 .chat .day {
+	
     position: relative;
     display: block;
     text-align: center;
@@ -219,6 +229,8 @@ a{
 }
 
 .msg time {
+	
+	
     font-size: 0.7rem;
     color: #ccc;
     margin-top: 3px;
@@ -247,6 +259,7 @@ emoji{
     margin-right: 2px;
     transform: translate3d(0px, 3px, 0px);
 }
+
 emoji.please{background-image: url(http://imgur.com/ftowh0s.png);}
 emoji.lmao{background-image: url(http://i.imgur.com/MllSy5N.png);}
 emoji.happy{background-image: url(http://imgur.com/5WUpcPZ.png);}
@@ -301,6 +314,7 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
 /* T Y P E */
 
 input.textarea {
+	
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -316,6 +330,7 @@ input.textarea {
     color: #666;
     font-weight: 400;
 }
+
 .emojis {
     position: fixed;
     display: block;
@@ -329,6 +344,7 @@ input.textarea {
     z-index: 100;
     cursor: pointer;
 }
+
 .emojis:active {
     opacity: 0.9;
 }
