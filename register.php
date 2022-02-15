@@ -51,7 +51,7 @@ if (isset($_POST['submit']))
 $sql = "INSERT INTO login VALUES ('','$name','$pass','$email')";
 
 if ($db->query($sql) === TRUE) {
-    echo "New user created successfully";
+    echo "New user has been created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
